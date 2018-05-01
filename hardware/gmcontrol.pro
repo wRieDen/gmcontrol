@@ -1,4 +1,4 @@
-update=Sun 29 Apr 2018 11:28:49 AM CEST
+update=30.04.2018 09:45:22
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/wrieden/Desktop/git/digikey-kicad-library/digikey-symbols
+LibDir=C:/Users/wried/Desktop/digikey-kicad-library/digikey-symbols
 [eeschema/libraries]
 LibName1=74xgxx
 LibName2=74xx

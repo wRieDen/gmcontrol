@@ -241,7 +241,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -251,68 +251,73 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 8850 2250 1100 750 
-U 5AE5B5EB
-F0 "phase_driver_a" 60
-F1 "phase_driver.sch" 60
-F2 "HIN" I L 8850 2800 60 
-F3 "LIN" I L 8850 2900 60 
-F4 "Phase" I R 9950 2350 60 
-F5 "VGateH" I L 8850 2450 60 
-F6 "VMotor" I L 8850 2350 60 
-F7 "GND" I L 8850 2650 60 
-F8 "VGateL" I L 8850 2550 60 
-F9 "Sense" I R 9950 2450 60 
-$EndSheet
-$Sheet
-S 8850 3300 1100 750 
-U 5AE70BCE
-F0 "phase_driver_b" 60
-F1 "phase_driver.sch" 60
-F2 "HIN" I L 8850 3850 60 
-F3 "LIN" I L 8850 3950 60 
-F4 "Phase" I R 9950 3400 60 
-F5 "VGateH" I L 8850 3500 60 
-F6 "VMotor" I L 8850 3400 60 
-F7 "GND" I L 8850 3700 60 
-F8 "VGateL" I L 8850 3600 60 
-F9 "Sense" I R 9950 3500 60 
-$EndSheet
-$Sheet
-S 8850 4400 1100 750 
-U 5AE71113
-F0 "phase_driver_c" 60
-F1 "phase_driver.sch" 60
-F2 "HIN" I L 8850 4950 60 
-F3 "LIN" I L 8850 5050 60 
-F4 "Phase" I R 9950 4500 60 
-F5 "VGateH" I L 8850 4600 60 
-F6 "VMotor" I L 8850 4500 60 
-F7 "GND" I L 8850 4800 60 
-F8 "VGateL" I L 8850 4700 60 
-F9 "Sense" I R 9950 4600 60 
-$EndSheet
-$Sheet
-S 8850 1450 1100 550 
-U 5AE7184D
-F0 "gate_voltage_supply" 60
-F1 "gate_voltage_supply.sch" 60
-F2 "OSC_L" I L 8850 1900 60 
-F3 "VIN" I L 8850 1550 60 
-F4 "GND" I L 8850 1650 60 
-F5 "VOUT_L" I R 9950 1650 60 
-F6 "OSC_H" I L 8850 1800 60 
-F7 "VOUT_H" I R 9950 1550 60 
-F8 "SENSE_H" I R 9950 1800 60 
-F9 "SENSE_L" I R 9950 1900 60 
-$EndSheet
-Text Notes 550  1000 0    60   ~ 0
-General Motor Controller\n- 4 Phases\n- 3 to 30V\n- 0 to 100% Duty Cycle\n- USB
-$Sheet
-S 3100 1700 3300 3000
-U 5AE8CF0A
-F0 "controller" 60
-F1 "controller.sch" 60
-$EndSheet
+$Comp
+L STM32F103C8Tx U?
+U 1 1 5AE8D453
+P 5750 3450
+F 0 "U?" H 2950 5175 50  0000 L BNN
+F 1 "STM32F103C8Tx" H 8550 5175 50  0000 R BNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 8550 5125 50  0001 R TNN
+F 3 "" H 5750 3450 50  0001 C CNN
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 8800 4150 2    60   Input ~ 0
+Phase_A_H
+Text HLabel 8800 4250 2    60   Input ~ 0
+Phase_B_H
+Text HLabel 8800 4350 2    60   Input ~ 0
+Phase_C_H
+Text HLabel 2700 4650 0    60   Input ~ 0
+Phase_A_L
+Text HLabel 2700 4750 0    60   Input ~ 0
+Phase_B_L
+Text HLabel 2700 4850 0    60   Input ~ 0
+Phase_C_L
+Text HLabel 8800 4450 2    60   Input ~ 0
+USB_DM
+Text HLabel 8800 4550 2    60   Input ~ 0
+USB_DP
+Text HLabel 8800 4650 2    60   Input ~ 0
+SWDIO
+Text HLabel 8800 4750 2    60   Input ~ 0
+SWDCLK
+Text HLabel 2700 3950 0    60   Input ~ 0
+IO
+Text HLabel 2700 4050 0    60   Input ~ 0
+io
+Text HLabel 2700 3650 0    60   Input ~ 0
+io
+Text HLabel 2700 3750 0    60   Input ~ 0
+io
+Text HLabel 2700 3850 0    60   Input ~ 0
+io
+Text HLabel 2700 2650 0    60   Input ~ 0
+osc
+Text HLabel 2700 2750 0    60   Input ~ 0
+osc
+Text HLabel 8800 3350 2    60   Input ~ 0
+Sense_A
+Text HLabel 8800 3450 2    60   Input ~ 0
+Sense_B
+Text HLabel 8800 3550 2    60   Input ~ 0
+Sense_C
+Text HLabel 8800 3650 2    60   Input ~ 0
+Sense_D
+Text HLabel 8800 3750 2    60   Input ~ 0
+Sense_Gate_H
+Text HLabel 8800 3850 2    60   Input ~ 0
+Sense_Gate_L
+Text HLabel 8800 3950 2    60   Input ~ 0
+Sense_VCC
+Text HLabel 8800 4050 2    60   Input ~ 0
+Sense_Current
+Text HLabel 2700 4350 0    60   Input ~ 0
+Phase_D_H
+Text HLabel 2700 4450 0    60   Input ~ 0
+Phase_D_L
+Text HLabel 2700 4150 0    60   Input ~ 0
+GateH_OSC
+Text HLabel 2700 4250 0    60   Input ~ 0
+GateL_OSC
 $EndSCHEMATC
