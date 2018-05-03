@@ -1,102 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos4000
-LIBS:cmos_ieee
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic_symbols
-LIBS:hc11
-LIBS:infineon
-LIBS:intel
-LIBS:interface
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:LEM
-LIBS:linear
-LIBS:logic_programmable
-LIBS:maxim
-LIBS:mechanical
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:xilinx
-LIBS:zetex
-LIBS:Zilog
-LIBS:gmcontrol
+EESchema Schematic File Version 4
 LIBS:gmcontrol-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -127,7 +31,7 @@ $EndSheet
 Text Notes 550  1000 0    60   ~ 0
 General Motor Controller\n- 4 Phases\n- 3 to 30V\n- 0 to 100% Duty Cycle\n- USB
 $Comp
-L USB_OTG J1
+L Connector:USB_B_Micro J1
 U 1 1 5AE89038
 P 1150 1750
 F 0 "J1" H 950 2200 50  0000 L CNN
@@ -138,12 +42,12 @@ F 3 "" H 1300 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jack-DC J2
+L Connector:Jack-DC J2
 U 1 1 5AE89125
 P 1150 2650
 F 0 "J2" H 1150 2860 50  0000 C CNN
 F 1 "Jack-DC" H 1150 2475 50  0000 C CNN
-F 2 "Connectors:BARREL_JACK" H 1200 2610 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1200 2610 50  0001 C CNN
 F 3 "" H 1200 2610 50  0001 C CNN
 	1    1150 2650
 	1    0    0    -1  
@@ -262,32 +166,32 @@ F6 "Vmotor" O R 3350 1300 60
 F7 "SENSE_Vmotor" O R 3350 1400 60 
 $EndSheet
 $Comp
-L Screw_Terminal_01x04 J4
+L Connector:Screw_Terminal_01x04 J4
 U 1 1 5AEE0660
 P 10800 1150
 F 0 "J4" H 10800 1350 50  0000 C CNN
 F 1 "Screw_Terminal_01x04" H 10800 850 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-4_P5.08mm" H 10800 1150 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 10800 1150 50  0001 C CNN
 F 3 "" H 10800 1150 50  0001 C CNN
 	1    10800 1150
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1450 1950
 $Comp
-L Conn_01x18 J3
+L Connector:Conn_01x18_Male J3
 U 1 1 5AEF14DA
 P 3550 2850
 F 0 "J3" H 3550 3750 50  0000 C CNN
 F 1 "Conn_01x18" H 3550 1850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x18_Pitch2.54mm" H 3550 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" H 3550 2850 50  0001 C CNN
 F 3 "" H 3550 2850 50  0001 C CNN
 	1    3550 2850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 1350 8900 1350
+	5750 1350 8800 1350
 Wire Wire Line
-	8800 1350 8800 5400
+	8800 1350 8800 2700
 Wire Wire Line
 	8800 2700 8900 2700
 Wire Wire Line
@@ -297,7 +201,7 @@ Wire Wire Line
 	8800 5400 8900 5400
 Connection ~ 8800 4050
 Wire Wire Line
-	8700 1250 8700 5300
+	8700 1250 8700 2600
 Wire Wire Line
 	8700 3950 8900 3950
 Wire Wire Line
@@ -309,7 +213,7 @@ Connection ~ 8700 2600
 Wire Wire Line
 	8900 1150 8600 1150
 Wire Wire Line
-	8600 1150 8600 5200
+	8600 1150 8600 2500
 Wire Wire Line
 	8600 2500 8900 2500
 Wire Wire Line
@@ -319,7 +223,7 @@ Connection ~ 8600 3850
 Wire Wire Line
 	8500 5100 8900 5100
 Wire Wire Line
-	8500 1050 8500 5100
+	8500 1050 8500 2400
 Wire Wire Line
 	8500 3750 8900 3750
 Wire Wire Line
@@ -328,7 +232,7 @@ Connection ~ 8500 3750
 Wire Wire Line
 	3450 950  5850 950 
 Wire Wire Line
-	5850 1050 8900 1050
+	5850 1050 8500 1050
 Connection ~ 8500 2400
 Wire Wire Line
 	5300 1500 8900 1500
@@ -427,15 +331,11 @@ Wire Wire Line
 Wire Wire Line
 	2200 1300 1800 1300
 Wire Wire Line
-	1800 1250 1800 1550
-Wire Wire Line
 	1800 1550 1450 1550
 Wire Wire Line
 	1150 2150 1150 2300
 Wire Wire Line
-	2000 2300 1050 2300
-Wire Wire Line
-	2000 1050 2000 2750
+	2000 1050 2000 1500
 Wire Wire Line
 	2000 1500 2200 1500
 Wire Wire Line
@@ -452,7 +352,7 @@ Wire Wire Line
 	2000 2750 1450 2750
 Connection ~ 2000 2650
 Wire Wire Line
-	1450 2550 1900 2550
+	1450 2550 1500 2550
 Wire Wire Line
 	1900 2550 1900 1400
 Wire Wire Line
@@ -471,13 +371,13 @@ Wire Wire Line
 Wire Wire Line
 	5650 1150 5650 3600
 Wire Wire Line
-	5850 950  5850 3150
+	5850 950  5850 1050
 Wire Wire Line
 	5850 3150 6000 3150
 Wire Wire Line
-	2000 1050 5750 1050
+	2000 1050 3550 1050
 Wire Wire Line
-	5750 1050 5750 3250
+	5750 1050 5750 1350
 Wire Wire Line
 	5750 3250 6000 3250
 Connection ~ 5750 1350
@@ -536,8 +436,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 2750 4050 2750
 Wire Wire Line
-	4050 2650 3750 2650
-Wire Wire Line
 	3750 2550 4050 2550
 Wire Wire Line
 	4050 2450 3750 2450
@@ -566,19 +464,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2000 4050 2000
 $Comp
-L PWR_FLAG #FLG01
-U 1 1 5AEFAA31
-P 1800 1250
-F 0 "#FLG01" H 1800 1325 50  0001 C CNN
-F 1 "PWR_FLAG" H 1800 1400 50  0000 C CNN
-F 2 "" H 1800 1250 50  0001 C CNN
-F 3 "" H 1800 1250 50  0001 C CNN
-	1    1800 1250
-	1    0    0    -1  
-$EndComp
-Connection ~ 1800 1300
-$Comp
-L PWR_FLAG #FLG02
+L power:PWR_FLAG #FLG02
 U 1 1 5AEFBF25
 P 1500 2500
 F 0 "#FLG02" H 1500 2575 50  0001 C CNN
@@ -588,21 +474,53 @@ F 3 "" H 1500 2500 50  0001 C CNN
 	1    1500 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L PWR_FLAG #FLG03
-U 1 1 5AEFD272
-P 1500 2250
-F 0 "#FLG03" H 1500 2325 50  0001 C CNN
-F 1 "PWR_FLAG" H 1500 2400 50  0000 C CNN
-F 2 "" H 1500 2250 50  0001 C CNN
-F 3 "" H 1500 2250 50  0001 C CNN
-	1    1500 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 2250 1500 2300
-Connection ~ 1500 2300
 Wire Wire Line
 	1500 2500 1500 2550
 Connection ~ 1500 2550
+Wire Wire Line
+	8800 2700 8800 4050
+Wire Wire Line
+	8800 4050 8800 5400
+Wire Wire Line
+	8700 3950 8700 5300
+Wire Wire Line
+	8700 2600 8700 3250
+Wire Wire Line
+	8600 2500 8600 3150
+Wire Wire Line
+	8600 3850 8600 5200
+Wire Wire Line
+	8500 3750 8500 5100
+Wire Wire Line
+	8500 2400 8500 3750
+Wire Wire Line
+	8700 3250 8700 3950
+Wire Wire Line
+	8600 3150 8600 3850
+Wire Wire Line
+	1150 2300 1050 2300
+Wire Wire Line
+	2000 2300 2000 2650
+Wire Wire Line
+	2000 2650 2000 2750
+Wire Wire Line
+	8500 1050 8900 1050
+Wire Wire Line
+	5750 1350 5750 3250
+Wire Wire Line
+	8800 1350 8900 1350
+Wire Wire Line
+	5850 1050 5850 3150
+Wire Wire Line
+	2000 1500 2000 2300
+Wire Wire Line
+	3550 1050 5750 1050
+Wire Wire Line
+	1800 1300 1800 1550
+Wire Wire Line
+	1500 2550 1900 2550
+Wire Wire Line
+	4050 2650 3750 2650
+Wire Wire Line
+	1150 2300 2000 2300
 $EndSCHEMATC

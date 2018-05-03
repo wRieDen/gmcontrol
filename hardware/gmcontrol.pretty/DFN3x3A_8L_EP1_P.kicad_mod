@@ -1,4 +1,4 @@
-(module DFN3x3A_8L_EP1_P (layer F.Cu) (tedit 5AE9A3A1)
+(module gmcontrol:DFN3x3A_8L_EP1_P (layer F.Cu) (tedit 5AEA4F9F)
   (descr "8-Lead Plastic Dual Flat, No Lead Package (MF) - 3x3x0.9 mm Body [DFN] (see Microchip Packaging Specification 00000049BS.pdf)")
   (tags "DFN 0.65")
   (attr smd)
@@ -30,7 +30,7 @@
   (pad 3 smd rect (at 0.345 0) (size 1.98 2.45) (layers F.Cu F.Paste F.Mask)
     (solder_paste_margin_ratio -0.2))
   (pad 3 smd rect (at 0 0) (size 0.43 3.21) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_Pitch0.65mm.wrl
+  (model ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

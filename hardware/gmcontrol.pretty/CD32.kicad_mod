@@ -1,4 +1,4 @@
-(module CD32 (layer F.Cu) (tedit 5AE9C70D)
+(module gmcontrol:CD32 (layer F.Cu) (tedit 5AEA50AC)
   (descr "Inductor, CD32")
   (tags "inductor md smd CD32")
   (attr smd)
@@ -20,9 +20,4 @@
   (fp_line (start -2 1.846) (end 2 1.846) (layer F.SilkS) (width 0.12))
   (pad 1 smd rect (at -1.3 0) (size 1.4 3.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.3 0) (size 1.4 3.5) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Inductors_SMD.3dshapes/L_Taiyo-Yuden_MD-4040.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
 )
