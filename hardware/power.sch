@@ -22,7 +22,7 @@ Text HLabel 2200 2500 0    60   Input ~ 0
 GND
 Text HLabel 6250 2050 2    60   Output ~ 0
 3.3V
-Text HLabel 6250 3100 2    60   Output ~ 0
+Text HLabel 6950 3100 2    60   Output ~ 0
 Vmotor
 $Comp
 L Regulator_Linear:MCP1700-1202E_SOT89 U2
@@ -174,38 +174,38 @@ Wire Wire Line
 	4500 2700 4500 2600
 Connection ~ 4500 2600
 Connection ~ 4500 3100
-Text HLabel 6250 2600 2    60   Output ~ 0
+Text HLabel 6950 2600 2    60   Output ~ 0
 SENSE_Vmotor
 $Comp
 L Device:R R42
 U 1 1 5AEC4801
-P 5900 2600
-F 0 "R42" V 5980 2600 50  0000 C CNN
-F 1 "10k" V 5900 2600 50  0000 C CNN
-F 2 "_Generic:0603_Small" V 5830 2600 50  0001 C CNN
-F 3 "" H 5900 2600 50  0001 C CNN
-	1    5900 2600
+P 6600 2600
+F 0 "R42" V 6680 2600 50  0000 C CNN
+F 1 "10k" V 6600 2600 50  0000 C CNN
+F 2 "_Generic:0603_Small" V 6530 2600 50  0001 C CNN
+F 3 "" H 6600 2600 50  0001 C CNN
+	1    6600 2600
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R43
 U 1 1 5AEC4917
-P 6150 2850
-F 0 "R43" V 6230 2850 50  0000 C CNN
-F 1 "1k" V 6150 2850 50  0000 C CNN
-F 2 "_Generic:0603_Small" V 6080 2850 50  0001 C CNN
-F 3 "" H 6150 2850 50  0001 C CNN
-	1    6150 2850
+P 6850 2850
+F 0 "R43" V 6930 2850 50  0000 C CNN
+F 1 "1k" V 6850 2850 50  0000 C CNN
+F 2 "_Generic:0603_Small" V 6780 2850 50  0001 C CNN
+F 3 "" H 6850 2850 50  0001 C CNN
+	1    6850 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 2700 6150 2600
+	6850 2700 6850 2600
 Wire Wire Line
-	6050 2600 6150 2600
-Connection ~ 6150 2600
+	6750 2600 6850 2600
+Connection ~ 6850 2600
 Wire Wire Line
-	6150 3000 6150 3100
-Connection ~ 6150 3100
+	6850 3000 6850 3100
+Connection ~ 6850 3100
 Connection ~ 4800 2600
 $Comp
 L Device:C C23
@@ -253,9 +253,9 @@ Wire Wire Line
 Wire Wire Line
 	4500 3100 4800 3100
 Wire Wire Line
-	6150 2600 6250 2600
+	6850 2600 6950 2600
 Wire Wire Line
-	6150 3100 6250 3100
+	6850 3100 6950 3100
 Wire Wire Line
 	4800 2600 5100 2600
 $Comp
@@ -318,12 +318,12 @@ Wire Wire Line
 	5700 2700 5700 2600
 Connection ~ 5700 2600
 Wire Wire Line
-	5700 2600 5750 2600
+	5700 2600 6000 2600
 Wire Wire Line
 	5700 3000 5700 3100
 Connection ~ 5700 3100
 Wire Wire Line
-	5700 3100 6150 3100
+	5700 3100 6000 3100
 Wire Wire Line
 	5400 3000 5400 3100
 Connection ~ 5400 3100
@@ -339,4 +339,46 @@ Wire Wire Line
 Connection ~ 4800 3100
 Wire Wire Line
 	4800 3100 5100 3100
+$Comp
+L Device:C C29
+U 1 1 5AEE2F7A
+P 6000 2850
+F 0 "C29" H 6025 2950 50  0000 L CNN
+F 1 "22u" H 6025 2750 50  0000 L CNN
+F 2 "_Generic:0805_Small" H 6038 2700 50  0001 C CNN
+F 3 "" H 6000 2850 50  0001 C CNN
+	1    6000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C30
+U 1 1 5AEE2FE2
+P 6300 2850
+F 0 "C30" H 6325 2950 50  0000 L CNN
+F 1 "22u" H 6325 2750 50  0000 L CNN
+F 2 "_Generic:0805_Small" H 6338 2700 50  0001 C CNN
+F 3 "" H 6300 2850 50  0001 C CNN
+	1    6300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3000 6000 3100
+Connection ~ 6000 3100
+Wire Wire Line
+	6000 3100 6300 3100
+Wire Wire Line
+	6000 2700 6000 2600
+Connection ~ 6000 2600
+Wire Wire Line
+	6000 2600 6300 2600
+Wire Wire Line
+	6300 2700 6300 2600
+Connection ~ 6300 2600
+Wire Wire Line
+	6300 2600 6450 2600
+Wire Wire Line
+	6300 3000 6300 3100
+Connection ~ 6300 3100
+Wire Wire Line
+	6300 3100 6850 3100
 $EndSCHEMATC
