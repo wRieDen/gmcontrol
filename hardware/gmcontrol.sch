@@ -177,17 +177,6 @@ F 3 "" H 10800 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1450 1950
-$Comp
-L Connector:Conn_01x18_Male J3
-U 1 1 5AEF14DA
-P 3550 2850
-F 0 "J3" H 3550 3750 50  0000 C CNN
-F 1 "Conn_01x18" H 3550 1850 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Horizontal" H 3550 2850 50  0001 C CNN
-F 3 "" H 3550 2850 50  0001 C CNN
-	1    3550 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5750 1350 8800 1350
 Wire Wire Line
@@ -386,7 +375,7 @@ Wire Wire Line
 	5650 3600 5300 3600
 Connection ~ 5850 1050
 Wire Wire Line
-	3350 1500 4050 1500
+	3350 1500 3750 1500
 Connection ~ 2000 1500
 Connection ~ 3550 1050
 Wire Wire Line
@@ -414,34 +403,6 @@ Wire Wire Line
 Wire Wire Line
 	10350 5100 10000 5100
 Wire Wire Line
-	3750 3750 4050 3750
-Wire Wire Line
-	4050 3650 3750 3650
-Wire Wire Line
-	3750 3550 4050 3550
-Wire Wire Line
-	4050 3450 3750 3450
-Wire Wire Line
-	3750 3350 4050 3350
-Wire Wire Line
-	4050 3250 3750 3250
-Wire Wire Line
-	3750 3150 4050 3150
-Wire Wire Line
-	4050 3050 3750 3050
-Wire Wire Line
-	3750 2950 4050 2950
-Wire Wire Line
-	4050 2850 3750 2850
-Wire Wire Line
-	3750 2750 4050 2750
-Wire Wire Line
-	3750 2550 4050 2550
-Wire Wire Line
-	4050 2450 3750 2450
-Wire Wire Line
-	3750 2350 3950 2350
-Wire Wire Line
 	3950 2350 3950 2300
 Wire Wire Line
 	3950 2300 4050 2300
@@ -450,15 +411,9 @@ Wire Wire Line
 Wire Wire Line
 	3900 2200 3900 2250
 Wire Wire Line
-	3900 2250 3750 2250
-Wire Wire Line
-	3750 2150 3800 2150
-Wire Wire Line
 	3800 2150 3800 2100
 Wire Wire Line
 	3800 2100 4050 2100
-Wire Wire Line
-	3750 2050 3800 2050
 Wire Wire Line
 	3800 2050 3800 2000
 Wire Wire Line
@@ -520,14 +475,12 @@ Wire Wire Line
 Wire Wire Line
 	1500 2550 1900 2550
 Wire Wire Line
-	4050 2650 3750 2650
-Wire Wire Line
 	1150 2300 2000 2300
 $Comp
-L Mechanical:Mounting_Hole_PAD MK?
+L Mechanical:Mounting_Hole_PAD MK1
 U 1 1 5AEFADF4
 P 1200 3200
-F 0 "MK?" V 1437 3205 50  0000 C CNN
+F 0 "MK1" V 1437 3205 50  0000 C CNN
 F 1 "Mounting_Hole_PAD" V 1346 3205 50  0000 C CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1200 3200 50  0001 C CNN
 F 3 "" H 1200 3200 50  0001 C CNN
@@ -535,10 +488,10 @@ F 3 "" H 1200 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK?
+L Mechanical:Mounting_Hole_PAD MK2
 U 1 1 5AEFAEA3
 P 1200 3600
-F 0 "MK?" V 1437 3605 50  0000 C CNN
+F 0 "MK2" V 1437 3605 50  0000 C CNN
 F 1 "Mounting_Hole_PAD" V 1346 3605 50  0000 C CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1200 3600 50  0001 C CNN
 F 3 "" H 1200 3600 50  0001 C CNN
@@ -553,6 +506,308 @@ Connection ~ 2000 2750
 Wire Wire Line
 	1300 3600 2000 3600
 Wire Wire Line
-	2000 3600 2000 3200
+	2000 3600 2000 3450
 Connection ~ 2000 3200
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5AF022BB
+P 3450 2050
+F 0 "J5" H 3370 1825 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 1916 50  0000 C CNN
+F 2 "_Generic:2.54Pad" H 3450 2050 50  0001 C CNN
+F 3 "~" H 3450 2050 50  0001 C CNN
+	1    3450 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5AF02347
+P 3450 2150
+F 0 "J6" H 3370 1925 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2016 50  0000 C CNN
+F 2 "_Generic:2.54Pad" H 3450 2150 50  0001 C CNN
+F 3 "~" H 3450 2150 50  0001 C CNN
+	1    3450 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5AF023B7
+P 3450 2250
+F 0 "J7" H 3370 2025 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2116 50  0000 C CNN
+F 2 "_Generic:2.54Pad" H 3450 2250 50  0001 C CNN
+F 3 "~" H 3450 2250 50  0001 C CNN
+	1    3450 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5AF0241F
+P 3450 3250
+F 0 "J8" H 3370 3025 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 3116 50  0000 C CNN
+F 2 "_Generic:2.54Pad" H 3450 3250 50  0001 C CNN
+F 3 "~" H 3450 3250 50  0001 C CNN
+	1    3450 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5AF0247F
+P 3450 3350
+F 0 "J9" H 3370 3125 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 3216 50  0000 C CNN
+F 2 "_Generic:2.54Pad" H 3450 3350 50  0001 C CNN
+F 3 "~" H 3450 3350 50  0001 C CNN
+	1    3450 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 5AF372D6
+P 2200 3600
+F 0 "J10" H 2120 3375 50  0000 C CNN
+F 1 "Conn_01x01" H 2120 3466 50  0000 C CNN
+F 2 "_Generic:2.54Pad" H 2200 3600 50  0001 C CNN
+F 3 "~" H 2200 3600 50  0001 C CNN
+	1    2200 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 3600
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 5AF40763
+P 3450 2350
+F 0 "J12" H 3370 2125 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2216 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 2350 50  0001 C CNN
+F 3 "~" H 3450 2350 50  0001 C CNN
+	1    3450 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 5AF40829
+P 3450 2450
+F 0 "J13" H 3370 2225 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2316 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 2450 50  0001 C CNN
+F 3 "~" H 3450 2450 50  0001 C CNN
+	1    3450 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 5AF408A8
+P 3450 2550
+F 0 "J14" H 3370 2325 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2416 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J15
+U 1 1 5AF4092B
+P 3450 2650
+F 0 "J15" H 3370 2425 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2516 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 2650 50  0001 C CNN
+F 3 "~" H 3450 2650 50  0001 C CNN
+	1    3450 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J16
+U 1 1 5AF4099D
+P 3450 2750
+F 0 "J16" H 3370 2525 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2616 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 2750 50  0001 C CNN
+F 3 "~" H 3450 2750 50  0001 C CNN
+	1    3450 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J17
+U 1 1 5AF40A13
+P 3450 2850
+F 0 "J17" H 3370 2625 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2716 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 2850 50  0001 C CNN
+F 3 "~" H 3450 2850 50  0001 C CNN
+	1    3450 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J18
+U 1 1 5AF40AB7
+P 3450 2950
+F 0 "J18" H 3370 2725 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2816 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 2950 50  0001 C CNN
+F 3 "~" H 3450 2950 50  0001 C CNN
+	1    3450 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J19
+U 1 1 5AF40B35
+P 3450 3050
+F 0 "J19" H 3370 2825 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 2916 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 3050 50  0001 C CNN
+F 3 "~" H 3450 3050 50  0001 C CNN
+	1    3450 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J20
+U 1 1 5AF40BCC
+P 3450 3150
+F 0 "J20" H 3370 2925 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 3016 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 3150 50  0001 C CNN
+F 3 "~" H 3450 3150 50  0001 C CNN
+	1    3450 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5AF40C52
+P 2200 3450
+F 0 "J11" H 2280 3492 50  0000 L CNN
+F 1 "Conn_01x01" H 2280 3401 50  0000 L CNN
+F 2 "_Generic:1.27Pad" H 2200 3450 50  0001 C CNN
+F 3 "~" H 2200 3450 50  0001 C CNN
+	1    2200 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 3450
+Wire Wire Line
+	2000 3450 2000 3300
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5AF40CAA
+P 2200 3300
+F 0 "J3" H 2280 3342 50  0000 L CNN
+F 1 "Conn_01x01" H 2280 3251 50  0000 L CNN
+F 2 "_Generic:1.27Pad" H 2200 3300 50  0001 C CNN
+F 3 "~" H 2200 3300 50  0001 C CNN
+	1    2200 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 3300
+Wire Wire Line
+	2000 3300 2000 3200
+$Comp
+L Connector_Generic:Conn_01x01 J25
+U 1 1 5AF40D17
+P 3750 1300
+F 0 "J25" V 3716 1212 50  0000 R CNN
+F 1 "Conn_01x01" V 3625 1212 50  0000 R CNN
+F 2 "_Generic:1.27Pad" H 3750 1300 50  0001 C CNN
+F 3 "~" H 3750 1300 50  0001 C CNN
+	1    3750 1300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3750 1500
+Wire Wire Line
+	3750 1500 3900 1500
+$Comp
+L Connector_Generic:Conn_01x01 J26
+U 1 1 5AF40DD2
+P 3900 1300
+F 0 "J26" V 3866 1212 50  0000 R CNN
+F 1 "Conn_01x01" V 3775 1212 50  0000 R CNN
+F 2 "_Generic:1.27Pad" H 3900 1300 50  0001 C CNN
+F 3 "~" H 3900 1300 50  0001 C CNN
+	1    3900 1300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3900 1500
+Wire Wire Line
+	3900 1500 4050 1500
+$Comp
+L Connector_Generic:Conn_01x01 J21
+U 1 1 5AF40E88
+P 3450 3450
+F 0 "J21" H 3370 3225 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 3316 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 3450 50  0001 C CNN
+F 3 "~" H 3450 3450 50  0001 C CNN
+	1    3450 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J22
+U 1 1 5AF40F3E
+P 3450 3550
+F 0 "J22" H 3370 3325 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 3416 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 3550 50  0001 C CNN
+F 3 "~" H 3450 3550 50  0001 C CNN
+	1    3450 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J23
+U 1 1 5AF40FF1
+P 3450 3650
+F 0 "J23" H 3370 3425 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 3516 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 3650 50  0001 C CNN
+F 3 "~" H 3450 3650 50  0001 C CNN
+	1    3450 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J24
+U 1 1 5AF41093
+P 3450 3750
+F 0 "J24" H 3370 3525 50  0000 C CNN
+F 1 "Conn_01x01" H 3370 3616 50  0000 C CNN
+F 2 "_Generic:1.27Pad" H 3450 3750 50  0001 C CNN
+F 3 "~" H 3450 3750 50  0001 C CNN
+	1    3450 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 2050 3800 2050
+Wire Wire Line
+	3650 3250 4050 3250
+Wire Wire Line
+	3650 3350 4050 3350
+Wire Wire Line
+	3650 2150 3800 2150
+Wire Wire Line
+	3650 2250 3900 2250
+Wire Wire Line
+	3650 2350 3950 2350
+Wire Wire Line
+	3650 2450 4050 2450
+Wire Wire Line
+	3650 2550 4050 2550
+Wire Wire Line
+	3650 2650 4050 2650
+Wire Wire Line
+	3650 2750 4050 2750
+Wire Wire Line
+	3650 2850 4050 2850
+Wire Wire Line
+	3650 2950 4050 2950
+Wire Wire Line
+	3650 3050 4050 3050
+Wire Wire Line
+	3650 3150 4050 3150
+Wire Wire Line
+	3650 3450 4050 3450
+Wire Wire Line
+	3650 3550 4050 3550
+Wire Wire Line
+	3650 3650 4050 3650
+Wire Wire Line
+	3650 3750 4050 3750
 $EndSCHEMATC
