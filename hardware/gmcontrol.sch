@@ -47,7 +47,7 @@ U 1 1 5AE89125
 P 1150 2650
 F 0 "J2" H 1150 2860 50  0000 C CNN
 F 1 "Jack-DC" H 1150 2475 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1200 2610 50  0001 C CNN
+F 2 "gmcontrol:BarrelJack_Horizontal_modified" H 1200 2610 50  0001 C CNN
 F 3 "" H 1200 2610 50  0001 C CNN
 	1    1150 2650
 	1    0    0    -1  
@@ -171,7 +171,7 @@ U 1 1 5AEE0660
 P 10800 1150
 F 0 "J4" H 10800 1350 50  0000 C CNN
 F 1 "Screw_Terminal_01x04" H 10800 850 50  0000 C CNN
-F 2 "" H 10800 1150 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 10800 1150 50  0001 C CNN
 F 3 "" H 10800 1150 50  0001 C CNN
 	1    10800 1150
 	1    0    0    -1  
@@ -183,7 +183,7 @@ U 1 1 5AEF14DA
 P 3550 2850
 F 0 "J3" H 3550 3750 50  0000 C CNN
 F 1 "Conn_01x18" H 3550 1850 50  0000 C CNN
-F 2 "" H 3550 2850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Horizontal" H 3550 2850 50  0001 C CNN
 F 3 "" H 3550 2850 50  0001 C CNN
 	1    3550 2850
 	1    0    0    -1  
