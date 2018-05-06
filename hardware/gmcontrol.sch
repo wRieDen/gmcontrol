@@ -523,4 +523,36 @@ Wire Wire Line
 	4050 2650 3750 2650
 Wire Wire Line
 	1150 2300 2000 2300
+$Comp
+L Mechanical:Mounting_Hole_PAD MK?
+U 1 1 5AEFADF4
+P 1200 3200
+F 0 "MK?" V 1437 3205 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" V 1346 3205 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1200 3200 50  0001 C CNN
+F 3 "" H 1200 3200 50  0001 C CNN
+	1    1200 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK?
+U 1 1 5AEFAEA3
+P 1200 3600
+F 0 "MK?" V 1437 3605 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" V 1346 3605 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1200 3600 50  0001 C CNN
+F 3 "" H 1200 3600 50  0001 C CNN
+	1    1200 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 2750 2000 3200
+Wire Wire Line
+	2000 3200 1300 3200
+Connection ~ 2000 2750
+Wire Wire Line
+	1300 3600 2000 3600
+Wire Wire Line
+	2000 3600 2000 3200
+Connection ~ 2000 3200
 $EndSCHEMATC
