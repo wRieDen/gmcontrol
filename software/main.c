@@ -37,10 +37,49 @@
   ******************************************************************************
   */
 /* Includes ------------------------------------------------------------------*/
+#ifndef USE_FULL_LL_DRIVER
+#define USE_FULL_LL_DRIVER
+#endif
+
+#ifndef HSE_VALUE
+#define HSE_VALUE=8000000
+#endif
+
+#ifndef HSE_STARTUP_TIMEOUT
+#define HSE_STARTUP_TIMEOUT=100
+#endif
+
+#ifndef LSE_STARTUP_TIMEOUT
+#define LSE_STARTUP_TIMEOUT=5000
+#endif
+
+#ifndef LSE_VALUE
+#define LSE_VALUE=32768
+#endif
+
+#ifndef HSI_VALUE
+#define HSI_VALUE=8000000
+#endif
+
+#ifndef LSI_VALUE
+#define LSI_VALUE=40000
+#endif
+
+#ifndef VDD_VALUE
+#define VDD_VALUE=3300
+#endif
+
+#ifndef PREFETCH_ENABLE
+#define PREFETCH_ENABLE=1
+#endif
+
+#ifndef STM32F103xB
+#define STM32F103xB
+#endif
+
 #include "main.h"
 #include "usart.h"
 #include "gpio.h"
-
 
 static void LL_Init(void);
 void SystemClock_Config(void);

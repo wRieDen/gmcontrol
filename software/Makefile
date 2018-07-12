@@ -13,7 +13,7 @@
 ######################################
 # target
 ######################################
-TARGET = cubemx
+TARGET = gmcontrol
 
 
 ######################################
@@ -105,9 +105,9 @@ AS_INCLUDES =
 # C includes
 C_INCLUDES =  \
 -Icubemx/Inc \
--I/home/wrieden/STM32Cube/Repository/STM32Cube_FW_F1_V1.6.1/Drivers/STM32F1xx_HAL_Driver/Inc \
--I/home/wrieden/STM32Cube/Repository/STM32Cube_FW_F1_V1.6.1/Drivers/CMSIS/Device/ST/STM32F1xx/Include \
--I/home/wrieden/STM32Cube/Repository/STM32Cube_FW_F1_V1.6.1/Drivers/CMSIS/Include
+-I$(wildcard ~/STM32Cube/Repository/STM32Cube_FW_F1_V1.6.1/Drivers/STM32F1xx_HAL_Driver/Inc) \
+-I$(wildcard ~/STM32Cube/Repository/STM32Cube_FW_F1_V1.6.1/Drivers/CMSIS/Device/ST/STM32F1xx/Include) \
+-I$(wildcard ~/STM32Cube/Repository/STM32Cube_FW_F1_V1.6.1/Drivers/CMSIS/Include)
 
 
 # compile gcc flags
