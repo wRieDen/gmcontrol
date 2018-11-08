@@ -42,7 +42,7 @@ F 3 "" H 1300 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Jack-DC J2
+L Connector:Barrel_Jack_Switch J2
 U 1 1 5AE89125
 P 1150 2650
 F 0 "J2" H 1150 2860 50  0000 C CNN
@@ -477,7 +477,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 2300 2000 2300
 $Comp
-L Mechanical:Mounting_Hole_PAD MK1
+L Mechanical:MountingHole_Pad MK1
 U 1 1 5AEFADF4
 P 1200 3200
 F 0 "MK1" V 1437 3205 50  0000 C CNN
@@ -488,7 +488,7 @@ F 3 "" H 1200 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK2
+L Mechanical:MountingHole_Pad MK2
 U 1 1 5AEFAEA3
 P 1200 3600
 F 0 "MK2" V 1437 3605 50  0000 C CNN
